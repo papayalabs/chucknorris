@@ -1,0 +1,10 @@
+<h1>Chuck Norris API</h1>
+<%= link_to 'Buscar de manera aleatoria', random_joke_path(@joke) %>
+<%= form_tag(search_joke_path) do %>
+    Texto <%= text_field_tag :query %>
+    <%= submit_tag 'Buscar' %>
+<% end %>
+<%= form_tag(category_joke_path) do %>
+    Categorias <%= select_tag "category", options_for_select(@categories) %>
+    <%= submit_tag 'Buscar' %>
+<% end %>

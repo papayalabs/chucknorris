@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jokes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Icon url</th>
+      <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jokes.each do |joke| %>
+      <tr>     
+        <td><%= image_tag(joke.icon_url) %></td>
+        <td><%= joke.value %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

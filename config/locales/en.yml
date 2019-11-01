@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  tags:
+    search: "Search"
+    random_search: "Random Search"

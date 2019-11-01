@@ -1,0 +1,7 @@
+es:
+  hello: "Hola Mundo"
+  tags:
+    search: "Buscar"
+    random_search: "Busqueda Aleatoria"
+    texts: "Textos"
+    categories: "Categorias"

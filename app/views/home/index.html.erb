@@ -1,10 +1,12 @@
 <h1>Chuck Norris API</h1>
-<%= link_to 'Buscar de manera aleatoria', random_joke_path(@joke) %>
+<%= button_tag(:type => 'button') do %>
+    <% link_to t('tags.random_search'), random_joke_path(@joke) %>
+<% end %>
 <%= form_tag(search_joke_path) do %>
-    Texto <%= text_field_tag :query %>
-    <%= submit_tag 'Buscar' %>
+    <%=t('tags.texts') %> <%= text_field_tag :query %>
+    <%= submit_tag t('tags.search') %>
 <% end %>
 <%= form_tag(category_joke_path) do %>
-    Categorias <%= select_tag "category", options_for_select(@categories) %>
-    <%= submit_tag 'Buscar' %>
+    <%= t('tags.categories') %> <%= select_tag "category", options_for_select(@categories) %>
+    <%= submit_tag t('tags.search') %>
 <% end %>
